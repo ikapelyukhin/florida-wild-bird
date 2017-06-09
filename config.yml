@@ -1,0 +1,6 @@
+input_pin: 17
+rrd_file: plant.rrd
+ts_file: 'last_message_ts'
+tg_token: placeholder
+tg_chat_id: placeholder
+tg_message: I require water, oh my zoological overlords! 🌿 💧

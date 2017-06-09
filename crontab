@@ -1,0 +1,2 @@
+* * * * * cd /root/plant && ./monitor.rb >> /root/plant/plant.log
+*/5 * * * * cd /root/plant && rrdtool graph /var/www/html/graph.png -a PNG --title="Moisture" --vertical-label "Moisture level" 'DEF:moisture=plant.rrd:moisture:MAX' 'LINE1:moisture#ff0000:Moisture probe'
