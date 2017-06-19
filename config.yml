@@ -1,4 +1,5 @@
 input_pin: 17
+vcc_out_pin: 18
 rrd_file: plant.rrd
 ts_file: 'last_message_ts'
 tg_token: placeholder

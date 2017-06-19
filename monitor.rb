@@ -16,12 +16,18 @@ rrd = RRD::Base.new(rrd_file)
 begin
   include PiPiper
 
+  vcc_pin = PiPiper::Pin.new(:pin => config['vcc_out_pin'], :direction => :out)
+  vcc_pin.on
+  sleep 0.2
+
   pin = PiPiper::Pin.new(:pin => config['input_pin'], :direction => :in, :pull => :up)
   value = pin.read
   value = ( 1 - value ).abs
   rrd.update Time.now, value
 rescue Exception => e
   puts e.to_s
+ensure
+  vcc_pin.off
 end
 
 if ( File.exists?( ts_file ) )
