@@ -1,5 +1,7 @@
 # Create RRD file
 
+[![Join the chat at https://gitter.im/pew-pew-pew666/Lobby](https://badges.gitter.im/pew-pew-pew666/Lobby.svg)](https://gitter.im/pew-pew-pew666/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ```
 #!/bin/bash
 
